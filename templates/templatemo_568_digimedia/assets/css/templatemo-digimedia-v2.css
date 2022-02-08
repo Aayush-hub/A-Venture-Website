@@ -120,7 +120,7 @@ p {
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
-  color: #afafaf;
+  color: #6c6b6b;
 }
 
 img {
@@ -949,9 +949,16 @@ Banner Style
 About Style
 --------------------------------------------- 
 */
-
-#about {
-  padding-top: 130px;
+@media (max-width:767px) {
+  #about {
+    flex-direction: column-reverse;
+    padding-top: 50px;
+  }
+}
+@media (min-width:767px) {
+  #about {
+    
+  }
 }
 
 .about-left-image img {
